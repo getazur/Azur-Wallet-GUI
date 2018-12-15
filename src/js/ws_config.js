@@ -26,15 +26,14 @@ config.walletServiceRpcPort = 8070;
 config.blockExplorerUrl = 'https://explorer.getazur.org/?hash=[[TX_HASH]]#blockchain_transaction';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'getazur.org';
+config.remoteNodeDefaultHost = 'node-1.getazur.org';
 
 // remote node list update url, set to null if you don't have one
 config.remoteNodeListUpdateUrl = 'https://raw.githubusercontent.com/AZUR/AZUR-nodes-json/master/AZUR-nodes.json';
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-    'remote.getazur.org:15251',
-    'remote1.getazur.org:15251',
+    'node-2.getazur.org:15251',
 ];
 
 // your currency name
