@@ -883,10 +883,6 @@ function handleAddressBook(){
             return;
         }
 
-        if(!wsutil.validateAddress(addressValue)){
-            formMessageSet('addressbook','error',`Invalid ${config.assetName} address`);
-            return;
-        }
         
         if( paymentIdValue.length){
             if( !wsutil.validatePaymentId(paymentIdValue) ){
@@ -1376,10 +1372,6 @@ function handleSendTransfer(){
         }
 
         let recipientAddress = sendInputAddress.value ? sendInputAddress.value.trim() : '';
-        if(!recipientAddress.length || !wsutil.validateAddress(recipientAddress)){
-            formMessageSet('send','error',`Invalid ${config.assetName} address`);
-            return;
-        }
 
         if(recipientAddress === wsession.get('loadedWalletAddress')){
             formMessageSet('send','error',"Sorry, can't send to your own address");
@@ -1912,10 +1904,6 @@ function initHandlers(){
         outputField.removeAttribute('title');
         if(!addr.length || !pid.length){
             formMessageSet('gia','error', 'Address & Payment ID is required');
-            return;
-        }
-        if(!wsutil.validateAddress(addr)){
-            formMessageSet('gia','error', `Invalid ${config.assetName} address`);
             return;
         }
         // only allow standard address
