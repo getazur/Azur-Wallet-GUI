@@ -1,8 +1,8 @@
 var config = {};
 
 // self explanatory, your application name, descriptions, etc
-config.appName = 'WalletShell';
-config.appDescription = 'AZUR Wallet';
+config.appName = 'AZUR';
+config.appDescription = 'Wallet';
 config.appSlogan = 'Slow and steady wins the race!';
 config.appId = 'AZUR.walletshell';
 config.appGitRepo = 'https://github.com/getazur/azur-wallet-gui';
