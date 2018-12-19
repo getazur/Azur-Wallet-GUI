@@ -2,22 +2,38 @@
     <section class="section" id="section-overview-import-key">
         <div class="section-contents darkened">
             <div class="div-title">
-                <h2 class="title">Import Private Key</h2>
+                <h2 class="title">RESTORE WITH KEYS</h2>
             </div>
             <div class="div-input">
+			
+			<div class="input-wrap">
+			 <div class="inline-block-div half-width" style="width:48%;">
+                    <h4 class="text-spaced input-required">VIEW KEY</h4>
+                    <input required="required" class="text-block" id="key-import-view" 
+                        placeholder="Required, your private view key to be imported..."
+                    />
+			</div>
+			 <div class="inline-block-div half-width" style="width:48%;">
+                    <h4 class="text-spaced input-required">SPEND KEY</h4>
+                    <input required="required" class="text-block" id="key-import-spend" 
+                    placeholder="Required, your private spend key to be imported..."
+                    />
+            </div>
+			</div>	
+				
                 <div class="input-wrap">
-                    <h4 class="text-spaced input-required">Select where the wallet file will be stored</h4>
+                    <h4 class="text-spaced input-required">SELECT A FOLDER AND GIVE A NAME FOR WALLET&nbsp;</h4>
                     <input required="required" data-fileobj="wallet file" 
                         data-selection="saveFile" data-targetinput="input-import-path" 
                         class="text-block path-input-button" id="input-import-path" readonly="readonly" 
-                        placeholder="Required, full path to store this wallet..."
+                        placeholder="Choose a folder where to store your wallet and a name."
                         />
                     <button data-fileobj="wallet file" data-selection="saveFile" data-targetinput="input-import-path" type="button" class="button-green path-input-button notabindex" id="button-import-browse"><i class="fas fa-folder-open"></i></button>
                 </div>
 
                 <div class="input-wrap">
                     <div class="inline-block-div half-width" style="width:64%;">
-                        <h4 class="text-spaced input-required">Set password to open this wallet</h4>
+                        <h4 class="text-spaced input-required">SET A PASSWORD&nbsp;</h4>
                         <input title="Required" required="required" type="password" 
                         class="text-block" id="input-import-password" 
                         placeholder="Required, set a password to open this wallet..."
@@ -26,24 +42,12 @@
                     </div>
 
                     <div class="inline-block-div half-width half-width-end" style="width:30%;float:right;margin-right:1.4rem;">
-                        <h4 class="text-spaced">Scan Height</h4>
+                        <h4 class="text-spaced">SCAN FROM HEIGHT ?</h4>
                         <input type="number" min="0" step="1" class="text-block short-number" 
                         id="key-import-height" value="1" data-initial="1"
-                        placeholder="Optional..."
+                        placeholder="Height Number"
                         />
                     </div>
-                </div>
-                <div class="input-wrap">
-                    <h4 class="text-spaced input-required">View key to be imported</h4>
-                    <input required="required" class="text-block" id="key-import-view" 
-                        placeholder="Required, your private view key to be imported..."
-                    />
-                </div>
-                <div class="input-wrap">
-                    <h4 class="text-spaced input-required">Spend key to be imported</h4>
-                    <input required="required" class="text-block" id="key-import-spend" 
-                    placeholder="Required, your private spend key to be imported..."
-                    />
                 </div>
                 
                 <div class="input-wrap">
