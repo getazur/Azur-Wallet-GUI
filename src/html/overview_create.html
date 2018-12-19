@@ -2,11 +2,11 @@
     <section class="section" id="section-overview-create">
         <div class="section-contents darkened">
             <div class="div-title">
-                <h2 class="title">Create new wallet</h2>
+                <h2 class="title">CREATE WALLET</h2>
             </div>
             <div class="div-input">
                 <div class="input-wrap">
-                    <h4 class="text-spaced input-required">Select where the wallet file will be stored</h4>
+                    <h4 class="text-spaced input-required">SELECT A FOLDER FOR WALLET&nbsp;</h4>
                     <input required="required" data-fileobj="wallet file" 
                         data-selection="saveFile"  data-targetinput="input-create-path" 
                         readonly="readonly" class="text-block path-input-button" id="input-create-path" 
@@ -15,7 +15,7 @@
                     <button  data-fileobj="wallet file" data-selection="saveFile"  data-targetinput="input-create-path" type="button" class="button-green path-input-button notabindex" id="button-create-browse"><i class="fas fa-folder-open"></i></button>
                 </div>
                 <div class="input-wrap">
-                    <h4 class="text-spaced input-required">Set password to open this wallet</h4>
+                    <h4 class="text-spaced input-required">SET A PASSWORD</h4>
                     <input required="required" type="password" class="text-block" 
                         id="input-create-password" 
                         placeholder="Required, set a password to open your new wallet..."
@@ -28,8 +28,9 @@
                 </div>
             </div>
             <div class="action-buttons">
+				<button type="button" class="form-bt button-red" data-section="section-welcome" id="button-create-back">Cancel</button>
                 <button type="button" class="form-bt button-green" id="button-create-create">Create</button>
-                <button type="button" class="form-bt button-red" data-section="section-welcome" id="button-create-back">Cancel</button>
+                
             </div>
         </div>
     </section>
