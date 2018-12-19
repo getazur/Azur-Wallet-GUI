@@ -6,23 +6,22 @@
             </div>
             <div class="div-input">
                 <div class="input-wrap">
-                    <div class="inline-block-div half-width" style="width:35%;float:left;margin-left:1.4rem;">
+                    <div class="inline-block-div half-width" style="width:45%;float:left;margin-left:1.4rem;">
                         <h4 class="text-spaced input-required">SELECT YOUR WALLET FILE</h4>
-                        <input type="text" required="required" data-selection="openFile" data-targetinput="input-load-path" data-initial="recentWallet" readonly="readonly" class="text-block path-input-button" id="input-load-path" tabindex="0" placeholder="Full path to the wallet file to be opened..." />
-                        <button data-selection="openFile" data-targetinput="input-load-path" type="button" class="button-green path-input-button notabindex" id="button-load-browse" tabindex="2"><i class="fas fa-folder-open"></i></button>
+                        <input type="text" required="required" data-selection="openFile" data-targetinput="input-load-path" data-initial="recentWallet" readonly="readonly" class="text-block path-input-button" id="input-load-path" tabindex="0" placeholder="CLICK HERE TO SELECT A FOLDER" />
                     </div>
-                    <div class="inline-block-div half-width" style="width:35%;float:right;margin-right:1.4rem;">
+                    <div class="inline-block-div half-width" style="width:45%;float:right;margin-right:1.4rem;">
                         <h4 class="text-spaced input-required">PASSWORD</h4>
                         <input required="required" autofocus="true" tabindex="0" type="password" class="text-block" id="input-load-password" placeholder="Password to open this wallet..." />
                         <button tabindex="-1" class="togpass notabindex" data-pf="input-load-password"><i class="fas fa-eye"></i></button>
                     </div>
                 </div>
                 <div class="input-wrap">
-                    <div class="inline-block-div half-width" style="width:35%;float:left;margin-left:1.4rem;">
+                    <div class="inline-block-div half-width" style="width:48%;float:left;margin-left:1.4rem;">
                         <h4 class="text-spaced input-required">DAEMON IP (LOCAL OR REMOTE)</h4>
                         <input tabindex="0" required="required" data-initial="daemon_host" name="nodeAddress" class="text-block" id="input-settings-daemon-address" placeholder="Required, hostname or IP address of the AZUR daemon or public node..." />
                     </div>
-                    <div class="inline-block-div half-width half-width-end" style="width:35%;float:right;margin-right:1.4rem;">
+                    <div class="inline-block-div half-width half-width-end" style="width:48%;float:right;margin-right:1.4rem;">
                         <h4 class="text-spaced input-required">DAEMON PORT (LOCAL OR REMOTE)</h4>
                         <input tabindex="0" type="number" required="required" data-initial="daemon_port" class="text-block" id="input-settings-daemon-port" placeholder="Required, port number of the AZUR daemon or public node..." />
                         <span id="daemonPortFormHelp" class="form-help"></span>
