@@ -32,7 +32,6 @@ html.dark::before{
 
 
 .dark body{
-    background-image: url(../assets/walletshell_logo_dm.png);
     color: #e8e8e8;
 }
 
