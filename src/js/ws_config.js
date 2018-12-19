@@ -3,8 +3,8 @@ var config = {};
 // self explanatory, your application name, descriptions, etc
 config.appName = 'AZUR';
 config.appDescription = 'Wallet';
-config.appSlogan = 'Slow and steady wins the race!';
-config.appId = 'AZUR.walletshell';
+config.appSlogan = 'Future is Now - Azur is Know';
+config.appId = 'AZUR Wallet GUI';
 config.appGitRepo = 'https://github.com/getazur/azur-wallet-gui';
 
 // default port number for your daemon (e.g. azurd)
