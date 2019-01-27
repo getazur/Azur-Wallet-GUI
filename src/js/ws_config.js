@@ -17,7 +17,7 @@ config.walletFileDefaultExt = 'wallet';
 config.walletServiceBinaryFilename = 'azur-service';
 
 // version on the bundled service (azur-service)
-config.walletServiceBinaryVersion = "v0.1.1";
+config.walletServiceBinaryVersion = "v0.1.2";
 
 // default port number for your wallet service (e.g. azur-service)
 config.walletServiceRpcPort = 8070;
@@ -26,20 +26,13 @@ config.walletServiceRpcPort = 8070;
 config.blockExplorerUrl = 'https://explorer.getazur.org/?hash=[[TX_HASH]]#blockchain_transaction';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'node-1.getazur.org';
+config.remoteNodeDefaultHost = 'public-1.getazur.org';
 
 // remote node list update url, set to null if you don't have one
 config.remoteNodeListUpdateUrl = 'https://raw.githubusercontent.com/getazur/public-nodes/master/azur-nodes.json';
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-    'node-2.getazur.org:15251',
-    'node-3.getazur.org:15251',
-    'node-4.getazur.org:15251',
-    'node-5.getazur.org:15251',
-    'node-6.getazur.org:15251',
-    'node-7.getazur.org:15251',
-    'node-8.getazur.org:15251',
 ];
 
 // your currency name
